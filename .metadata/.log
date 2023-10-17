@@ -2293,3 +2293,15 @@ java.io.FileNotFoundException: C:\Users\user1\jdbc_workspace\chap01_DB_Oracle\sr
 
 !ENTRY org.eclipse.jdt.launching 4 108 2023-10-17 10:48:24.992
 !MESSAGE Working directory does not exist: C:\Users\user1\jdbc_workspace\chap01_DB_Oracle
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-17 10:50:09.286
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-17 12:00:57.521
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-17 16:02:52.292
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-17 16:04:05.990
+!MESSAGE No .vrapperrc or _vrapperrc found.
