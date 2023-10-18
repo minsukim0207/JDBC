@@ -1,4 +1,4 @@
-package com.kh.db.oracle.sample;
+package com.kh.oracledb.crud;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -7,17 +7,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class DBConnection {
+public class SelectSample {
 
 	public static void main(String[] args) {
-		//selectBank();
+		//selectAll();
+		selectOne();
 		//selectKhcafeMenu();
 		//selectKhcafeCafes();
-		//selectIf();
-		selectKhbank();
+		//selectKhbank();
 	}
 	
-	static void selectBank() {
+	static void selectAll() {
 		// 1. 드라이버 연결 : Oracle JDBC 드라이버 클래스 이름
 				String driver = "oracle.jdbc.driver.OracleDriver";
 				
@@ -115,7 +115,7 @@ public class DBConnection {
 		}
 	}
 	
-	static void selectIf() {
+	static void selectOne() {
 
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -165,7 +165,7 @@ public class DBConnection {
 	}
 
 	static void selectKhbank() {
-		String driver = "oracle.jdbc.driver.OracleDriver";
+		//String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "KHBANK";
 		String password = "KHBANK";
@@ -184,23 +184,4 @@ public class DBConnection {
 			e.printStackTrace();
 		}
 	}
-	
-	static void pp() {
-		String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String user = "khbank";
-		String password = "khbank";
-		
-		Connection conn = null;
-		try {
-			conn = DriverManager.getConnection(url, user, password);
-			String selectQuery = "select * from bank";
-			PreparedStatement selectState = conn.prepareStatement(selectQuery);
-			ResultSet result = selectState.executeQuery();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	}
-}
+}	
